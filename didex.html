@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img  class="myslides" src="bill gates.jpg" alt="" style=" height: 500px;  width: 600px;border: 4px solid gray; border-radius: 25px;" >
+
+        <img  class="myslides" src="Charles babage.jpg" alt="" style=" height: 500px;  width: 600px; border: 4px solid gray; border-radius: 25px;">
+
+         <img   class="myslides" src="einstien2.jpg" alt="" style=" height: 500px;  width: 600px; border: 4px solid gray; border-radius: 25px;" >
+
+         <img  class="myslides" src="robert hoolk.jpg" alt="" style=" height: 500px;  width: 600px; border: 4px solid gray; border-radius: 25px;">
+
+
+         <script>
+
+let value =0;
+carousel();
+
+function carousel(){
+    let man;
+    let x = document.getElementsByClassName('myslides');
+   
+    for (man = 0;man<x.length; man++){
+        x[man].style.display ="none";
+    }
+    
+    value++
+    if (value>x.length){
+        value = 1
+    }
+
+    x[value-1].style.display="block";
+    setTimeout(carousel,2789)
+}
+
+         </script>
+    </section>
+</body>
+</html>
